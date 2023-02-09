@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="grupo-2" />
         <module name="ConvertirXML" />
         <module name="AccesoTrabajo2bis" />
       </profile>
