@@ -21,13 +21,15 @@ public class Convertir {
 
             //Convertimos el fichero XML a Objeto
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-            Sucursales sucursales = (Sucursales) unmarshaller.unmarshal(new File("sucursales.xml"));
+            Sucursales sucursales = (Sucursales) unmarshaller.unmarshal(new File("C:\\Users\\Guillermo\\Desktop\\grupo-2-main\\src\\sucursales.xml"));
 
+            //Convertimos el Objeto a XML
             Marshaller marshaller = jaxbContext.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
             stringWriter = new StringWriter();
             marshaller.marshal(sucursales, stringWriter);
+            marshaller.marshal(sucursales, new File("sucursales.xml"));
 
             ObjectMapper mapper = new ObjectMapper();
 

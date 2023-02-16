@@ -47,7 +47,7 @@ public class Consola2 extends JFrame {
 		lbInformacion = new JLabel("CONVERSOR JSON-XML");
 		lbInformacion.setBounds(140, 44, 363, 13);
 	    option1.add(lbInformacion);
-		ventanaPrincipal.addTab("Option 1", option1);
+		ventanaPrincipal.addTab("CONVERTIR", option1);
 
 		JLabel lbXML_JSON = new JLabel("Pulsa para convertir el fichero XML a un fichero JSON.");
 		lbXML_JSON.setBounds(60, 70, 320, 40);
@@ -104,7 +104,7 @@ public class Consola2 extends JFrame {
 		JLabel lbImportar = new JLabel("IMPORTAR XML-MONGODB");
 		lbImportar.setBounds(140, 44, 260, 14);
 		option3.add(lbImportar);
-		ventanaPrincipal.addTab("Option 2", option3);
+		ventanaPrincipal.addTab("IMPORTAR", option3);
 
 		JLabel lbtxtImportar = new JLabel("Importa un fichero XML a una colección de MongoDB.");
 		lbtxtImportar.setBounds(50, 70, 340, 40);
@@ -131,7 +131,7 @@ public class Consola2 extends JFrame {
 		lbEsportar.setAlignmentY(CENTER_ALIGNMENT);
 		lbEsportar.setBounds(140, 44, 260, 14);
 	    option2.add(lbEsportar);
-		ventanaPrincipal.addTab("Option 3", option2);
+		ventanaPrincipal.addTab("EXPORTAR", option2);
 	    
 	    JLabel lbtxtExportar = new JLabel("Exporta un fichero XML desde una colección de MongoDB.");
 		lbtxtExportar.setBounds(50, 70, 340, 40);
@@ -153,7 +153,7 @@ public class Consola2 extends JFrame {
 	    });
 
 		JTabbedPane ventanaMostrar = new JTabbedPane(JTabbedPane.TOP);
-		ventanaPrincipal.addTab("Option 4", null, ventanaMostrar, null);
+		ventanaPrincipal.addTab("LISTAR", null, ventanaMostrar, null);
 
 		JTextArea txJson = new JTextArea(10, 20);
 		txJson.setLineWrap(true);

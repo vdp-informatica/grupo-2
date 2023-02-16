@@ -19,7 +19,7 @@ public class Importar {
 		FileReader fr = new FileReader("sucursales.json");
 		BufferedReader bf = new BufferedReader(fr);
 
-		//Creamos el objeto clliente para leer la coleccion de MongoDb
+		//Creamos el objeto cliente para leer la coleccion de MongoDb
 		MongoClient cliente = new MongoClient();
 		//Leemos la base de datos de MongoDb
 		MongoDatabase db = cliente.getDatabase("2AMT");
